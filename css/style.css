@@ -75,6 +75,12 @@ a.fa.fa-chevron-down {
   font-size: 20px;
   color: snow;
 }
+span.bold {
+  font-weight: 700;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+  color: snow !important;
+}
 /* RATE */
 .list-group-flush .list-group-item.list-rate {
   justify-content: space-between;
