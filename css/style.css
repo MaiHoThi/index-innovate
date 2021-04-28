@@ -9,11 +9,17 @@ form.navbar-toggler-right.form-inline{
 }
 @media (max-width:48em) {
 
+  .content-1{
+    margin-top: 2rem !important;
+  }
   ol.breadcrumb {
     font-size: 12px !important;
   }
   .navbar .container{
     width: -webkit-fill-available;
+  }
+  .scrolled {
+    padding-top: 19px !important;
   }
   input.form-control{
     width: 100% !important;
@@ -43,7 +49,7 @@ li.nav-item.p-2 {
   text-align: center;
 }
 div#navbarNav {
-  background-color: rgba(0,0,0,.9);
+  background-color: rgb(90, 89, 89);
 }
 .container-fluid.banner {
   height: 648px;
@@ -108,10 +114,8 @@ body{
   transition: 0.35s all ease;
 }
 .scrolled {
-  padding-top: 12px;
   background-color: rgb(90, 89, 89);
   transition: 0.35s all ease;
-
 }
 form.navbar-toggler-right.form-inline.mt-1 {
   display: none;
@@ -126,7 +130,7 @@ form.navbar-toggler-right.form-inline.mt-1 {
 .navbar ul li a.nav-link {
   
   color: snow !important;
-  padding: 10px 15px 0 15px;
+  padding: 5px;
   font-weight: 300;
   font-family: Arial,Helvetica,sans-serif;
   font-size: 18px;
@@ -135,6 +139,9 @@ form.navbar-toggler-right.form-inline.mt-1 {
 .navbar ul li a.nav-link:hover {
   border-bottom: 2px solid snow;
   color: snow !important;
+}
+.container.navbar.navbar-toggleable-md {
+  background-color: transparent;
 }
 /* banner */
 .banner{
@@ -225,7 +232,7 @@ div.ct h3.bold {
   font-weight: 700;
 }
 .content-1{
-  margin-top: 6rem !important;
+  margin-top: 6rem ;
 }
 /* content 2 */
 .container-fluid.content-1 ,.container-fluid.content-1.seo {
