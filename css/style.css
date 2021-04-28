@@ -1,8 +1,10 @@
 /* navbar */
 @media (max-width:48em) {
+  ol.breadcrumb {
+    font-size: 12px !important;
+  }
   .navbar .container{
-    width: 100%;
-    background: rgb(90, 89, 89);
+    width: -webkit-fill-available;
   }
   .navbar{
     padding-left: 0px;
@@ -18,6 +20,9 @@ li.nav-item.p-2 {
   display: block;
   text-align: center;
 }
+div#navbarNav {
+  background-color: rgba(0,0,0,.9);
+}
 .container-fluid.banner {
   height: 648px;
 }
@@ -32,11 +37,18 @@ ol.breadcrumb {
   display: flex;
   justify-content: center;
 }
+.display-4 {
+  font-size: 2.5rem;
+}
 /* call to ac */
 .form-group.mb-2 {
   margin-right: 0px !important;
 }
+h3.lighter.video {
+  font-size: 20px;
 }
+}
+
 body{
   width: 100%;
   height: 100%;
@@ -107,22 +119,35 @@ body{
   bottom: 0;
   right: 0;
 }
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  background-color: #0000002b;
+  left: 0px;
+  height: 100%;
+}
 .innovate{
   position: absolute;
   top:310px;
   left: 30%;
   color: snow;
+  z-index: 100;
 }
-
+a.btn.btn-outline-secondary:hover {
+  background: black;
+}
 .breadcrumb{
   background-color: transparent;
 }
-a.fa.fa-chevron-down {
+button i.fa.fa-chevron-down {
   position: absolute;
   bottom: 15px;
   left: 50%;
   font-size: 20px;
   color: snow;
+  z-index: 100;
 }
 span.bold {
   font-weight: 700;
